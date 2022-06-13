@@ -19,14 +19,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Frontend Bootcamp</title>
+    <title>VirtuaSpace</title>
   </head>
   <body>
     <!-- Navbar -->
     <header>
       <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
-          <a href="#" class="navbar-brand">Frontend Bootcamp</a>
+          <a href="#" class="navbar-brand">VirtuaSpace</a>
 
           <button
             class="navbar-toggler"
@@ -37,16 +37,147 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navmenu">
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navmenu"
+          >
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a href="#learn" class="nav-link">What You'll Learn</a>
+              <li class="nav-item d-flex dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Hosting
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="img/webhost.svg" width="30" height="30" />
+                      Web Hosting</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="img/cloudhost.svg" width="30" height="30" />
+                      Cloud Hosting</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="img/wordpress.svg" width="30" height="30" />
+                      WordPress Hosting</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  VPS
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="img/vps.svg" width="30" height="30" />
+                      VPS Hosting</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="img/cyber.svg" width="30" height="30" />
+                      CyberPanel Hosting</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="img/minecraft.svg" width="30" height="30" />
+                      Minecraft Hosting</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Email
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="img/google.svg" width="30" height="30" />
+                      Google Workspace</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="img/email.svg" width="30" height="30" />
+                      Email Hosting</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Domain
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="img/domain.svg" width="30" height="30" />
+                      Domain Checker</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="img/whois.svg" width="30" height="30" />
+                      WHOIS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="img/domaintrans.svg" width="30" height="30" />
+                      Domain transfer</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a href="#questions" class="nav-link">Questions</a>
-              </li>
-              <li class="nav-item">
-                <a href="#instructors" class="nav-link">Instructors</a>
+                <a class="nav-link" href="#">Pricing</a>
               </li>
             </ul>
           </div>
@@ -55,95 +186,110 @@
     </header>
     <!-- Showcase -->
     <section
-      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+      class="showcase text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
     >
+      <!--<div class="container d-flex justify-content-end">
+        <div class="row">
+          <div class="col-auto">
+            <button
+              type="button"
+              class="loginbasket-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#login"
+            >
+              Log In
+            </button>
+          </div>
+          <div class="col-auto">
+            <button type="button" class="loginbasket-btn">
+              Basket
+            </button>
+          </div>
+        </div>
+      </div>-->
       <div class="container">
-        <div class="d-sm-flex align-items-center justify-content-between">
+        <div
+          class="d-sm-flex align-items-center text-center justify-content-between"
+        >
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="img/headerleft.webp"
+            alt=""
+          />
           <div>
-            <h1>Become a <span class="text-warning">Web Developer</span></h1>
+            <h2>Hosting + Free Domain</h2>
+            <h1 class="showcase-h1">£1.99/mo</h1>
             <p class="lead my-4">
               We focus on teaching our students the fundamentals of the latest
               and greatest technologies to prepare them for their first dev role
             </p>
-            <button
-              class="btn btn-primary btn-lg"
-              data-bs-toggle="modal"
-              data-bs-target="#enroll"
-            >
-              Start The Enrollment
-            </button>
+            <button class="signup-btn">Get Started</button>
           </div>
-          <img
-            class="img-fluid w-50 d-none d-sm-block"
-            src="img/showcase.svg"
-            alt=""
-          />
         </div>
       </div>
     </section>
 
     <!-- Newsletter -->
-    <section class="bg-primary text-light p-5">
+    <!--<section class="bg-primary text-light p-5">
       <div class="container">
         <div class="d-md-flex justify-content-between align-items-center">
           <h3 class="mb-3 mb-md-0">Sign up for our Newsletter</h3>
 
           <div class="input-group news-input">
             <input type="text" class="form-control" placeholder="Enter Email" />
-            <button class="btn btn-dark btn-lg" type="button">Button</button>
+            <button class="btn btn-dark btn-lg" type="button">Submit</button>
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
 
     <!-- Box section -->
     <section class="p-5">
       <div class="container">
         <div class="row text-center g-4">
+          <div class="mb-3">
+            <h1>Choose Your Web Hosting Plan</h1>
+          </div>
           <div class="col-md">
-            <div class="card bg-dark text-light">
+            <div class="card popout">
               <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="bi bi-laptop"></i>
-                </div>
-                <h3 class="card-title mb-3">Virtual</h3>
+                <h3 class="card-title mb-3">Single Web Hosting</h3>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum tenetur deserunt facilis fuga laudantium placeat.
+                  The perfect WP hosting option for beginners
                 </p>
                 <a href="#" class="btn btn-primary">Read More</a>
               </div>
             </div>
           </div>
           <div class="col-md">
-            <div class="card bg-secondary text-light">
-              <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="bi bi-square"></i>
+            <div class="card popout">
+              <div class="card-header">
+                <h5>MOST POPULAR</h5>
+                <div class="card-body text-center">
+                  <h3 class="card-title mb-3">Premium Web Hosting</h3>
+                  <p class="card-text">
+                    Great for personal WordPress website hosting and portfolios
+                  </p>
+                  <a href="#" class="btn btn-dark">Read More</a>
                 </div>
-                <h3 class="card-title mb-3">Hybrid</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deleniti fuga cumque doloremque, ratione veniam maiores.
-                </p>
-                <a href="#" class="btn btn-dark">Read More</a>
               </div>
             </div>
           </div>
           <div class="col-md">
-            <div class="card bg-dark text-light">
+            <div class="card popout">
               <div class="card-body text-center">
-                <div class="h1 mb-3">
-                  <i class="bi bi-people"></i>
-                </div>
-                <h3 class="card-title mb-3">In Person</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                  quidem reprehenderit quas natus. Similique, blanditiis.
-                </p>
+                <h3 class="card-title mb-3">Business Web Hosting</h3>
+                <p class="card-text">Made for small and medium businesses</p>
                 <a href="#" class="btn btn-primary">Read More</a>
               </div>
             </div>
           </div>
+          <a href="#">Payment terms</a>
+          <p>
+            Need help deciding which hosting plan is for you? We’re here to help
+            you out with that. Register for a live consultation
+            <a href="#">here</a>.
+          </p>
         </div>
       </div>
     </section>
@@ -500,15 +646,14 @@
     <!-- modal -->
     <div
       class="modal fade"
-      id="enroll"
+      id="login"
       tabindex="-1"
-      aria-labelledby="enroll"
+      aria-labelledby="login"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-sm modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="enroll">Modal title</h5>
+          <div class="modal-header d-none">
             <button
               type="button"
               class="btn-close"
@@ -517,30 +662,31 @@
             ></button>
           </div>
           <div class="modal-body">
-            <p class="lead">Fill out this form and we will get back to you</p>
+            <p class="lead text-center">Login to your account</p>
             <form>
               <div class="mb-3">
-                <label for="first-name" class="col-form-label">
-                  First name:
-                </label>
-                <input type="text" class="form-control" id="first-name" />
+                <label for="first-name" class="col-form-label"></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="Email"
+                />
               </div>
-
               <div class="mb-3">
-                <label for="first-name" class="col-form-label">
-                  Last name:
-                </label>
-                <input type="text" class="form-control" id="first-name" />
-              </div>
-
-              <div class="mb-3">
-                <label for="first-name" class="col-form-label"> Email: </label>
-                <input type="text" class="form-control" id="first-name" />
-              </div>
-
-              <div class="mb-3">
-                <label for="first-name" class="col-form-label"> Phone: </label>
-                <input type="text" class="form-control" id="first-name" />
+                <label for="first-name" class="col-form-label"></label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Password"
+                />
+                <input
+                  class="hidepass"
+                  type="checkbox"
+                  onclick="myFunction()"
+                />
+                Show Password
               </div>
             </form>
           </div>
@@ -552,7 +698,7 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-primary">Login</button>
           </div>
         </div>
       </div>
@@ -573,6 +719,16 @@
         center: [-5.062078, 51.834708],
         zoom: 17,
       });
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("password");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
     </script>
   </body>
 </html>
