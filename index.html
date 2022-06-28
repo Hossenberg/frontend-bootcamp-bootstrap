@@ -14,22 +14,20 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
     <title>VirtuaSpace</title>
   </head>
   <body>
     <!-- Navbar -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <nav class="navbar navbar-dark navbar-expand-lg py-3 static-top">
         <div class="container">
-          <a href="#" class="navbar-brand">VirtuaSpace</a>
+          <a href="#" class="navbar-brand">
+            <img class="logo" src="img/virtuaspace.png" />
+          </a>
 
           <button
-            class="navbar-toggler"
+            class="navbar-toggler mt-3"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navmenu"
@@ -42,7 +40,7 @@
             id="navmenu"
           >
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item d-flex dropdown">
+              <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -188,25 +186,6 @@
     <section
       class="showcase text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
     >
-      <!--<div class="container d-flex justify-content-end">
-        <div class="row">
-          <div class="col-auto">
-            <button
-              type="button"
-              class="loginbasket-btn"
-              data-bs-toggle="modal"
-              data-bs-target="#login"
-            >
-              Log In
-            </button>
-          </div>
-          <div class="col-auto">
-            <button type="button" class="loginbasket-btn">
-              Basket
-            </button>
-          </div>
-        </div>
-      </div>-->
       <div class="container">
         <div
           class="d-sm-flex align-items-center text-center justify-content-between"
@@ -220,8 +199,8 @@
             <h2>Hosting + Free Domain</h2>
             <h1 class="showcase-h1">£1.99/mo</h1>
             <p class="lead my-4">
-              We focus on teaching our students the fundamentals of the latest
-              and greatest technologies to prepare them for their first dev role
+              Get a free domain and lifetime SSL for £1.99/mo with a 12 month
+              subscription.
             </p>
             <button class="signup-btn">Get Started</button>
           </div>
@@ -229,66 +208,247 @@
       </div>
     </section>
 
-    <!-- Newsletter -->
-    <!--<section class="bg-primary text-light p-5">
-      <div class="container">
-        <div class="d-md-flex justify-content-between align-items-center">
-          <h3 class="mb-3 mb-md-0">Sign up for our Newsletter</h3>
-
-          <div class="input-group news-input">
-            <input type="text" class="form-control" placeholder="Enter Email" />
-            <button class="btn btn-dark btn-lg" type="button">Submit</button>
-          </div>
-        </div>
-      </div>
-    </section>-->
-
     <!-- Box section -->
     <section class="p-5">
       <div class="container">
-        <div class="row text-center g-4">
-          <div class="mb-3">
+        <div class="row">
+          <div class="box-title">
             <h1>Choose Your Web Hosting Plan</h1>
           </div>
-          <div class="col-md">
+          <div class="col-lg-4 mb-3 d-flex align-items-stretch">
             <div class="card popout">
               <div class="card-body text-center">
-                <h5 class="card-title mb-3">Single Web Hosting</h3>
+                <h3 class="card-title mb-3">Single Web Hosting</h3>
                 <p class="card-text">
                   The perfect WP hosting option for beginners
                 </p>
-                <h1>£0.99<span class="small-h1">/mo</span></h3>
-                <a href="#" class="btn card-btn">Read More</a>
+                <span class="linethrough">£9.99</span>
+                <span class="saving">SAVE 90%</span>
+                <h1>£0.99<span class="small-h1">/mo</span></h1>
+                <a href="#" class="btn card-btn blue-btn mt-5">Add to cart</a>
+                <p class="renew pt-3">£2.99/mo when you renew</p>
+                <ul class="services pt-2">
+                  <li>
+                    <i class="bi bi-check"></i> <strong>1</strong> Websites
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>30 GB</strong> SSD
+                    Storage
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>~10000</strong> Visits
+                    Monthly <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>1</strong> Email Account
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>Free</strong> SSL
+                    (£11.95 value) <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-x"></i> <strong>Free</strong> Domain
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>100 GB</strong> Bandwith
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <strong>Managed</strong> WordPress
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <strong>WordPress</strong> Acceleration
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <strong>WordPress</strong> Staging Tool
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>30 Days</strong> Money
+                    Back Guarantee <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>2</strong> Databases
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>GIT</strong> Access
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="col-md">
+
+          <div class="col-lg-4 mb-3 d-flex align-items-stretch">
             <div class="card popout">
-              <div class="card-header">
-                <h5>MOST POPULAR</h5>
-                <div class="card-body text-center">
-                  <h3 class="card-title mb-3">Premium Web Hosting</h3>
-                  <p class="card-text">
-                    Great for personal WordPress website hosting and portfolios
-                  </p>
-                  <a href="#" class="btn btn-dark">Read More</a>
-                </div>
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">Premium Web Hosting</h3>
+                <p class="card-text">
+                  Great for personal WordPress website hosting and portfolios
+                </p>
+                <span class="linethrough">£10.19</span>
+                <span class="saving-popular">SAVE 80%</span>
+                <h1>£1.99<span class="small-h1">/mo</span></h1>
+                <a href="#" class="btn btn-dark popular-btn mt-5"
+                  >Add to cart</a
+                >
+                <p class="renew pt-3">£2.99/mo when you renew</p>
+                <ul class="services pt-2">
+                  <li>
+                    <i class="bi bi-check"></i> <strong>100</strong> Websites
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>100 GB</strong> SSD
+                    Storage
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>~25000</strong> Visits
+                    Monthly <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>Free</strong> Email
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>Free</strong> SSL
+                    (£11.95 value) <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>Free</strong> Domain
+                    (£7.99 value) <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <strong>Unlimited</strong> Bandwith
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <strong>Managed</strong> WordPress
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <strong>WordPress</strong> Acceleration
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-x"></i> <strong>WordPress</strong> Staging
+                    Tool <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>30 Days</strong> Money
+                    Back Guarantee <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <strong>Unlimited</strong> Databases
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>GIT</strong> Access
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>SSH</strong> Access
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="col-md">
+
+          <div class="col-lg-4 mb-3 d-flex align-items-stretch">
             <div class="card popout">
               <div class="card-body text-center">
                 <h3 class="card-title mb-3">Business Web Hosting</h3>
                 <p class="card-text">Made for small and medium businesses</p>
-                <h1>£3.99<span class="small-h1">/mo</span></h3>
-                  <a href="#" class="btn card-btn">Read More</a>
+                <span class="linethrough">£13.99</span>
+                <span class="saving">SAVE 71%</span>
+                <h1>£3.99<span class="small-h1">/mo</span></h1>
+                <a href="#" class="btn card-btn blue-btn mt-5">Add to cart</a>
+                <p class="renew pt-3">£2.99/mo when you renew</p>
+                <ul class="services pt-2">
+                  <li>
+                    <i class="bi bi-check"></i> <strong>100</strong> Websites
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>200 GB</strong> SSD
+                    Storage
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>~100000</strong> Visits
+                    Monthly <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>Free</strong> Email
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>Free</strong> SSL
+                    (£11.95 value) <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>Free</strong> Domain
+                    (£7.99 value) <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <strong>Unlimited</strong> Bandwith
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <strong>Managed</strong> WordPress
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <strong>WordPress</strong> Acceleration
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <strong>WordPress</strong> Staging Tool
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>30 Days</strong> Money
+                    Back Guarantee <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <strong>Unlimited</strong> Databases
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>GIT</strong> Access
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>SSH</strong> Access
+                    <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>Daily</strong> Backups
+                    (£11.40 value) <i class="bi bi-question-circle"></i>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <strong>WordPress</strong> CDN
+                    (£9.95 value) <i class="bi bi-question-circle"></i>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-          <a href="#">Payment terms</a>
-          <p>
-            Need help deciding which hosting plan is for you? We’re here to help
+          <a class="text-center mb-3 mt-3" href="#">Payment terms</a>
+          <p class="text-center">
+            Need help deciding which hosting plan is for you? We're here to help
             you out with that. Register for a live consultation
             <a href="#">here</a>.
           </p>
@@ -296,441 +456,60 @@
       </div>
     </section>
 
-    <!-- Learn sections -->
-    <section id="learn" class="p-5">
+    <!-- domain name section -->
+    <section class="domain-name">
       <div class="container">
-        <div class="row align-items-center justify-content-between">
+        <div class="row justify-content-between">
           <div class="col-md">
-            <img src="img/fundamentals.svg" class="img-fluid" alt="" />
-          </div>
-          <div class="col-md p-5">
-            <h2>Learn the fundamentals</h2>
-            <p class="lead">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              officia quod eius corporis quam molestias.
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              porro repellendus consequuntur voluptas fugiat repudiandae.
-              Tenetur inventore nostrum sint, error consequatur eos eius a
-              reprehenderit sunt distinctio doloribus eligendi doloremque?
-            </p>
-            <a href="#" class="btn btn-light mt-3">
-              <i class="bi bi-chevron-right"></i>Read More</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="learn" class="p-5 bg-dark text-light">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md p-5">
-            <h2>Learn React</h2>
-            <p class="lead">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              officia quod eius corporis quam molestias.
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              porro repellendus consequuntur voluptas fugiat repudiandae.
-              Tenetur inventore nostrum sint, error consequatur eos eius a
-              reprehenderit sunt distinctio doloribus eligendi doloremque?
-            </p>
-            <a href="#" class="btn btn-light mt-3">
-              <i class="bi bi-chevron-right"></i>Read More</a
-            >
-          </div>
-          <div class="col-md">
-            <img src="img/react.svg" class="img-fluid" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Question Accordion Section -->
-    <section id="questions" class="p-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
-        <div class="accordion accordion-flush" id="questions">
-          <!-- item 1 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-one"
-              >
-                Where exactly are you located?
-              </button>
-            </h2>
-            <div
-              id="question-one"
-              class="accordion-collapse collapse"
-              data-bs-parent="#questions"
-            >
-              <div class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
-                quis ipsum esse nulla dolorum ab odit adipisci repellendus magni
-                earum explicabo repudiandae suscipit cumque, itaque velit,
-                nostrum laboriosam voluptatibus nam consequatur. Soluta ex totam
-                esse tempora cum hic laudantium, dolor aspernatur pariatur ipsa
-                consequatur obcaecati commodi delectus et adipisci eveniet.
-              </div>
-            </div>
-          </div>
-          <!-- item 2 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-two"
-              >
-                How much does it cost to attend?
-              </button>
-            </h2>
-            <div
-              id="question-two"
-              class="accordion-collapse collapse"
-              data-bs-parent="#questions"
-            >
-              <div class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
-                quis ipsum esse nulla dolorum ab odit adipisci repellendus magni
-                earum explicabo repudiandae suscipit cumque, itaque velit,
-                nostrum laboriosam voluptatibus nam consequatur. Soluta ex totam
-                esse tempora cum hic laudantium, dolor aspernatur pariatur ipsa
-                consequatur obcaecati commodi delectus et adipisci eveniet.
-              </div>
-            </div>
-          </div>
-          <!-- item 3 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-three"
-              >
-                What do I need to know?
-              </button>
-            </h2>
-            <div
-              id="question-three"
-              class="accordion-collapse collapse"
-              data-bs-parent="#questions"
-            >
-              <div class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
-                quis ipsum esse nulla dolorum ab odit adipisci repellendus magni
-                earum explicabo repudiandae suscipit cumque, itaque velit,
-                nostrum laboriosam voluptatibus nam consequatur. Soluta ex totam
-                esse tempora cum hic laudantium, dolor aspernatur pariatur ipsa
-                consequatur obcaecati commodi delectus et adipisci eveniet.
-              </div>
-            </div>
-          </div>
-          <!-- item 4 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-four"
-              >
-                How do I sign up?
-              </button>
-            </h2>
-            <div
-              id="question-four"
-              class="accordion-collapse collapse"
-              data-bs-parent="#questions"
-            >
-              <div class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
-                quis ipsum esse nulla dolorum ab odit adipisci repellendus magni
-                earum explicabo repudiandae suscipit cumque, itaque velit,
-                nostrum laboriosam voluptatibus nam consequatur. Soluta ex totam
-                esse tempora cum hic laudantium, dolor aspernatur pariatur ipsa
-                consequatur obcaecati commodi delectus et adipisci eveniet.
-              </div>
-            </div>
-          </div>
-          <!-- item 5 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-five"
-              >
-                Do you help me find a job?
-              </button>
-            </h2>
-            <div
-              id="question-five"
-              class="accordion-collapse collapse"
-              data-bs-parent="#questions"
-            >
-              <div class="accordion-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
-                quis ipsum esse nulla dolorum ab odit adipisci repellendus magni
-                earum explicabo repudiandae suscipit cumque, itaque velit,
-                nostrum laboriosam voluptatibus nam consequatur. Soluta ex totam
-                esse tempora cum hic laudantium, dolor aspernatur pariatur ipsa
-                consequatur obcaecati commodi delectus et adipisci eveniet.
-              </div>
+            <div class="text-center">
+              <h2 class="mb-3">Find the perfect domain name</h2>
+              <p class="pb-3">
+                Enter domain name of your choice and pick any extension name on
+                the next step (choose between .co.uk, .com, .online, .live,
+                .store, .info and many more)
+              </p>
+              <form class="search">
+                <input type="text" placeholder="Enter your desired domain" />
+                <input type="submit" value="Search" />
+              </form>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- instructors -->
-    <section id="instructors" class="p-5 bg-primary">
+    <!-- money back section -->
+    <section class="money">
       <div class="container">
-        <h2 class="text-center text-white">Our Instructors</h2>
-        <p class="lead text-center text-white mb-5">
-          Our instructors have 5+ years working as web developers in the
-          industry
-        </p>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="https://randomuser.me/api/portraits/men/11.jpg"
-                  class="rounded-circle mb-3"
-                  alt=""
-                />
-                <h3 class="card-title mb-3">John Doe</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Repudiandae eaque neque sed tenetur laboriosam iusto?
-                </p>
-                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="https://randomuser.me/api/portraits/women/11.jpg"
-                  class="rounded-circle mb-3"
-                  alt=""
-                />
-                <h3 class="card-title mb-3">Jane Doe</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Repudiandae eaque neque sed tenetur laboriosam iusto?
-                </p>
-                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="https://randomuser.me/api/portraits/men/12.jpg"
-                  class="rounded-circle mb-3"
-                  alt=""
-                />
-                <h3 class="card-title mb-3">Steve Smith</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Repudiandae eaque neque sed tenetur laboriosam iusto?
-                </p>
-                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="https://randomuser.me/api/portraits/women/12.jpg"
-                  class="rounded-circle mb-3"
-                  alt=""
-                />
-                <h3 class="card-title mb-3">Sarah Smith</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Repudiandae eaque neque sed tenetur laboriosam iusto?
-                </p>
-                <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
-                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- contact and map -->
-    <section class="p-5">
-      <div class="container">
-        <div class="row g-4">
+        <div class="row justify-content-between">
           <div class="col-md">
-            <h2 class="text-center mb-4">Contact Info</h2>
-            <ul class="list-group list-group-flush lead">
-              <li class="list-group-item">
-                <span class="fw-bold">Main Location:</span> 50 Main Street,
-                Boston MA
-              </li>
-            </ul>
-
-            <ul class="list-group list-group-flush lead">
-              <li class="list-group-item">
-                <span class="fw-bold">Enrollment Phone:</span> (555) 555-5555
-              </li>
-            </ul>
-
-            <ul class="list-group list-group-flush lead">
-              <li class="list-group-item">
-                <span class="fw-bold">Student Phone:</span> (333) 333-3333
-              </li>
-            </ul>
-
-            <ul class="list-group list-group-flush lead">
-              <li class="list-group-item">
-                <span class="fw-bold">Enrollment Email:</span>
-                enroll@frontendbc.test
-              </li>
-            </ul>
-
-            <ul class="list-group list-group-flush lead">
-              <li class="list-group-item">
-                <span class="fw-bold">Student Email:</span>
-                student@frontendbc.test
-              </li>
-            </ul>
-          </div>
-          <div class="col-md">
-            <div id="map"></div>
+            <div class="text-center">
+              <h2 class="mb-5">30 day money-back guarantee</h2>
+              <p>
+                If you are not happy with our services for whatever reason,
+                we’ll refund your payment.
+              </p>
+              <p>No hassle, no risk.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- footer -->
-    <footer class="p-5 bg-dark text-white text-center position-relative">
+    <footer class="footer p-5 position-relative">
       <div class="container">
-        <p class="lead">Copyright &copy; 2021 Frontend Bootcamp</p>
+        <p class="lead">Copyright &copy; 2022 VirtuaSpace</p>
         <a href="#" class="position-absolute bottom-0 end-0 p-5">
           <i class="bi bi-arrow-up-circle h1"></i>
         </a>
       </div>
     </footer>
 
-    <!-- modal -->
-    <div
-      class="modal fade"
-      id="login"
-      tabindex="-1"
-      aria-labelledby="login"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-sm modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header d-none">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <p class="lead text-center">Login to your account</p>
-            <form>
-              <div class="mb-3">
-                <label for="first-name" class="col-form-label"></label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="email"
-                  placeholder="Email"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="first-name" class="col-form-label"></label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="password"
-                  placeholder="Password"
-                />
-                <input
-                  class="hidepass"
-                  type="checkbox"
-                  onclick="myFunction()"
-                />
-                Show Password
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Login</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
-    <script>
-      mapboxgl.accessToken =
-        "pk.eyJ1IjoiaG9zc2VuYmVyZyIsImEiOiJjbDFoMHpscjgwMDJ3M2NydDEyanJ4ZG1rIn0.LkDGD35vUUY9QVCzcnTLhA";
-      const map = new mapboxgl.Map({
-        container: "map",
-        style: "mapbox://styles/mapbox/streets-v11",
-        center: [-5.062078, 51.834708],
-        zoom: 17,
-      });
-    </script>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("password");
-        if (x.type === "password") {
-          x.type = "text";
-        } else {
-          x.type = "password";
-        }
-      }
-    </script>
   </body>
 </html>

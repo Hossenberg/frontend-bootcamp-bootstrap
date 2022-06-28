@@ -1,17 +1,35 @@
-body::before {
-  display: block;
-  content: "";
-  height: 60px;
+header .container {
+  padding-left: none;
 }
 
+.logo {
+  width: 45%;
+  height: auto;
+}
+
+.nav-link {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.navbar,
 .showcase {
-  background-image: linear-gradient(45deg, white, #0000FF);
+  background-image: linear-gradient(45deg, white, #0000ff);
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
+.showcase h2 {
+  font-weight: 900;
+}
+
 .showcase-h1 {
   font-size: 60px;
+  font-weight: 900;
+}
+
+.showcase p {
+  font-weight: 700;
 }
 
 .loginbasket-btn {
@@ -26,11 +44,6 @@ body::before {
   font-weight: 500;
 }
 
-.modal-footer {
-  border: 0;
-  margin-top: -20px;
-}
-
 .signup-btn,
 .card-btn {
   border: none;
@@ -40,22 +53,27 @@ body::before {
   display: inline-block;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 16px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
-.card-btn {
-  background-color: blue;
-  color: white;
-  padding: 10px 50px;
+.signup-btn {
+  border-radius: 5%;
+}
+
+.box-title {
+  padding-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
 }
 
 .card {
-  padding: 15px;
+  padding-top: 20px;
+  border-radius: 5px;
+  width: 25rem;
 }
 
 .card-header {
-  background-color: salmon;
+  background-color: #e75480;
   color: white;
 }
 
@@ -66,35 +84,149 @@ body::before {
 
 .small-h1 {
   font-size: 20px;
+  font-weight: 600;
 }
 
 .popout {
-  transition: transform .7s; /* Animation */
+  transition: transform 0.7s; /* Animation */
   margin: 0 auto;
 }
 
-.card-btn:hover {
+.linethrough {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.blue-btn,
+.popular-btn {
+  color: white;
+  padding: 10px 70px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.blue-btn {
+  background-color: blue;
+}
+
+.popular-btn {
+  background-color: #e75480;
+}
+
+.renew {
+  color: grey;
+}
+
+.services {
+  text-align: left;
+  list-style: none;
+}
+
+.bi-check {
+  color: green;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.bi-x {
+  color: red;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.saving,
+.saving-popular {
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.saving {
+  background-color: #0096ff;
+}
+
+.saving-popular {
+  background-color: #e75480;
+}
+
+.domain-name {
+  padding: 8rem 10rem;
+  color: #2f1c6a;
+  background-color: #a0a0ff;
+  background-image: linear-gradient(#a0a0ff, white);
+  width: 100%;
+}
+
+.money {
+  padding: 8rem 10rem;
+  color: #2f1c6a;
+  width: 100%;
+}
+
+.domain-name h2,
+.money h2 {
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.domain-name p,
+.money p {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.search {
+  width: 100%;
+}
+
+.blue-btn:hover {
   background-color: darkblue;
+}
+
+.popular-btn:hover {
+  background-color: #ff3632;
+}
+
+.blue-btn:hover,
+.popular-btn:hover {
   color: white;
 }
 
 .popout:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 1);
 }
 
-#map {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
+.footer {
+  background-color: #a0a0ff;
+}
+
+.footer p {
+  color: #2f1c6a;
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
-  .news-input {
-    width: 50%;
-  }
-
   .showcase-h1 {
     font-size: 100px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar-brand {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* left: 75%;
+    transform: translateX(-50%); */
   }
 }
